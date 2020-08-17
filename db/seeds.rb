@@ -1,6 +1,6 @@
 ###USERS 
 
-u1 = User.create(username:"Maleehahaha", password: "1234" )
+u1 = User.create(username:"Maleehahaha", password_digest: "1234" )
 
 ###POSTS 
 p1 = Post.create(name:"LINNMON / FINNVARD", 
