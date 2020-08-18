@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2020_08_17_201059) do
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id"
     t.integer "post_id"
+    t.string "fav_image"
+    t.string "fav_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
