@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  # skip_before_action :authorized
-    skip_before_action :authorized, only: [:create]
+  skip_before_action :authorized
+    # skip_before_action :authorized, only: [:create]
 
     #Might need to look more into the profile method
     def profile

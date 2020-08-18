@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2020_08_17_201059) do
     t.string "link"
     t.integer "user_id"
     t.integer "likes"
+    t.boolean "favorite", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
