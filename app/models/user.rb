@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-    has_many :posts
+    has_many :favorites
+    has_many :posts, through: :favorities 
     has_many :comments
     has_secure_password
 end

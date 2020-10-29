@@ -8,9 +8,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.string :brand
       t.integer :rating
       t.string :link
-      t.integer :user_id
       t.integer :likes 
-      t.boolean :favorite, default: false
 
       t.timestamps
     end
