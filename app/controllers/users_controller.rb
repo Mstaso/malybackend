@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     
     def index 
         @users = User.all
-        render json: @users, include: [:posts, :favorites], status: :ok
+        render json: @users, include: [:posts, :comments], status: :ok
     end 
 
     def create
